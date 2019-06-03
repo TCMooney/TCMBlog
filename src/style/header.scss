@@ -1,0 +1,22 @@
+.header {
+    grid-row: header-s/header-e;
+    grid-column: 1/-1;
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns:[img-s] 1fr [img-e links-s] 1fr [links-e];
+
+    &__img {
+        transform: translateX(25px);
+        grid-column: img-s/img-e;
+        grid-row: 1/-1;
+    }
+
+    &__links {
+        grid-column: links-s/links-e;
+        grid-row: 1/-1;
+        margin-right: 30px;
+    }
+}
+
