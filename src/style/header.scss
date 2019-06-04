@@ -11,12 +11,20 @@
         transform: translateX(25px);
         grid-column: img-s/img-e;
         grid-row: 1/-1;
+        justify-self: start;
     }
 
     &__links {
         grid-column: links-s/links-e;
         grid-row: 1/-1;
         margin-right: 30px;
+        display: grid;
+        grid-template-rows: [s] 1fr [e];
+        grid-column-gap: 47px;
+        & > * {
+            grid-row: s/e;
+        }
     }
 }
 
+ 
