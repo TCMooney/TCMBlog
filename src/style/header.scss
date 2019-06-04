@@ -5,13 +5,18 @@
     justify-items: end;
     align-items: center;
     grid-template-rows: 1fr;
-    grid-template-columns:[img-s] 1fr [img-e links-s] 1fr [links-e];
+    grid-template-columns:[img-s] 1fr [img-e search-s] 1fr [search-e links-s] 1fr [links-e];
 
     &__img {
         transform: translateX(25px);
         grid-column: img-s/img-e;
         grid-row: 1/-1;
         justify-self: start;
+    }
+
+    &__searchbar {
+        grid-column: search-s/search-e;
+        
     }
 
     &__links {

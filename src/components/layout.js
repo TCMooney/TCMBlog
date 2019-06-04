@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './headerNav/header';
+import Header from './header/header';
 
 export default class Layout extends Component {
   render() {
