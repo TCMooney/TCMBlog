@@ -14,9 +14,10 @@
         justify-self: start;
     }
 
-    &__searchbar {
+    &__search-bar {
         grid-column: search-s/search-e;
-        
+        grid-row: 1/-1;
+
     }
 
     &__links {
