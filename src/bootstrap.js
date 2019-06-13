@@ -7,12 +7,12 @@ import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(compose((window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore)));
 
-import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
 
 import history from './history';
 
 import Layout from './components/layout';
+import Signin from './components/auth/signin';
 
   
 function main() {
@@ -21,7 +21,8 @@ function main() {
       <Router history={history}>
         <Layout>
           <Switch>
-
+            <Route path='/' exact component={Signin}/>
+            <Route path='/signin' exact component={Signin}/>
           </Switch>
         </Layout>
       </Router>

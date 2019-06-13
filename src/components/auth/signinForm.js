@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { reduxForm, Field } from 'redux-form';
+import { Field, reduxForm } from 'redux-form';
 
 import { FormInput, FormButton } from '../formFields';
 
@@ -21,6 +21,7 @@ class SigninForm extends Component {
                     title='Password'
                     placeholder='Password'
                     component={FormInput}/>
+                <div className='sign-in-form__line'></div>
                 <Field className='sign-in-form__login'
                     name='login'
                     type='login'
@@ -30,5 +31,9 @@ class SigninForm extends Component {
         )
     }
 }
+
+SigninForm = reduxForm({
+    form: 'SigninForm'
+})(SigninForm);
 
 export default SigninForm;

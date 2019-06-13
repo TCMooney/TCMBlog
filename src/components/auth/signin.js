@@ -6,8 +6,10 @@ class Signin extends Component {
     render(){
         return (
             <div className='sign-in'>
-                <SigninForm onSubmit={/*onSubmit function*/} className='sign-in__form'/>
+                <SigninForm className='sign-in__form'/>
             </div>
         )
     }
 }
+
+export default Signin;
