@@ -13,6 +13,7 @@ import history from './history';
 
 import Layout from './components/layout';
 import Signin from './components/auth/signin';
+import Signup from './components/auth/signup';
 
   
 function main() {
@@ -23,6 +24,7 @@ function main() {
           <Switch>
             <Route path='/' exact component={Signin}/>
             <Route path='/signin' exact component={Signin}/>
+            <Route path='/signup' exact component={Signup}/>
           </Switch>
         </Layout>
       </Router>
