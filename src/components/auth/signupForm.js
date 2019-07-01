@@ -8,24 +8,41 @@ class SignupForm extends Component {
         const { className, handlesubmit} = this.props;
         return (
             <form className={`${className} sign-up-form`} handlesubmit={handlesubmit}>
-                <Field className='sign-in-form__name'
+                <Field className='sign-up-form__name'
                     name='name'
                     type='name'
                     title='Name'
                     placeholder='Name'
                     component={FormInput}/>
-                <Field className='sign-in-form__email'
+                <Field className='sign-up-form__email'
                     name='email'
                     type='email'
                     title='Email'
                     placeholder='Email'
                     component={FormInput}/>
-                <Field className='sign-in-form__password'
+                <Field className='sign-up-form__password'
                     name='password'
                     type='password'
                     title='Password'
                     placeholder='Password'
                     component={FormInput}/>
+                <Field className='sign-up-form__confirm'
+                    name='confirm'
+                    type='password'
+                    title='Confirm Password'
+                    placeholder='Confirm Password'
+                    component={FormInput}/>
+                <div className='sign-up-form__line'></div>
+                <Field className='sign-up-form__create'
+                    name='create'
+                    type='submit'
+                    title='Create Account'
+                    component={FormButton}/>
+                <Field className='sign-up-form__back'
+                    name='back'
+                    type='button'
+                    title='Back'
+                    component={FormButton}/>
             </form>
         )
     }
