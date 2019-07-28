@@ -23,5 +23,10 @@ body {
 
 @import 'header';
 @import 'layout';
-@import 'auth/signin.scss';
 @import 'form-fields';
+
+//AUTH
+@import 'auth/signin.scss';
+@import 'auth/signup.scss';
+
+@import 'blog-form';

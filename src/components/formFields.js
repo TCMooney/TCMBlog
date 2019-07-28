@@ -30,3 +30,19 @@ export class FormButton extends Component {
         )
     }
 }
+
+export class FormTextArea extends Component {
+    render(){
+        const { className, title, placeholder, type } = this.props;
+        return (
+            <div className={`${className} form-text-area`}>
+                <label className='form-text-area__label'>{title}</label>
+                <textarea className='form-text-area__text-area'
+                    title={title}
+                    placeholder={placeholder}
+                    type={type}
+                    />
+            </div>
+        )
+    }
+}

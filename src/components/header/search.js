@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import {reduxForm, Field } from 'redux-form';
+import {reduxForm, Field } from 'redux-form';
 
 function FormSearchBar(props) {
     return(
@@ -21,8 +21,8 @@ class SearchBar extends Component {
     }
 }
 
-// SearchBar = reduxForm({
-//     form:'SearchBar'
-// })(SearchBar);
+SearchBar = reduxForm({
+    form:'SearchBar'
+})(SearchBar);
 
 export default SearchBar;
