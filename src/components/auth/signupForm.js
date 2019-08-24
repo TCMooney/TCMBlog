@@ -5,9 +5,9 @@ import { FormInput, FormButton } from '../formFields';
 
 class SignupForm extends Component {
     render() {
-        const { className, handlesubmit} = this.props;
+        const { className, handleSubmit} = this.props;
         return (
-            <form className={`${className} sign-up-form`} handlesubmit={handlesubmit}>
+            <form className={`${className} sign-up-form`} onSubmit={handleSubmit}>
                 <Field className='sign-up-form__name'
                     name='name'
                     type='name'
@@ -27,7 +27,7 @@ class SignupForm extends Component {
                     placeholder='Password'
                     component={FormInput}/>
                 <Field className='sign-up-form__confirm'
-                    name='confirm'
+                    name='password2'
                     type='password'
                     title='Confirm Password'
                     placeholder='Confirm Password'

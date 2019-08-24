@@ -23,7 +23,7 @@ class SigninForm extends Component {
                 <div className='sign-in-form__line'></div>
                 <Field className='sign-in-form__login'
                     name='login'
-                    type='login'
+                    type='submit'
                     title='Login'
                     component={FormButton}/>
             </form>
